@@ -2,13 +2,12 @@ import React, { useContext } from "react";
 import { MyContext } from "../ContextApi/MyContext";
 
 function ProgressBar() {
-  const { screen, setScreen, allActiveScreens } = useContext(MyContext);
+  const { allActiveScreens } = useContext(MyContext);
   return (
     <>
       <div className="ProgressContainer">
         <div className="activescreen">1</div>
         <div className="emptyBar1"></div>
-        {/* <div className="emptyBar2"></div> */}
         <div
           className={allActiveScreens.includes(1) ? "emptyBar1" : "emptyBar2"}
         ></div>

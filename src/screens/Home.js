@@ -1,23 +1,20 @@
 import React, { useContext } from "react";
 import Header from "../components/Header";
-import TextInput from "../components/TextInput";
 import "../styles/TextInputStyles.css";
 import "../styles/HomeStyles.css";
 import "../styles/CardStyle.css";
 import { FaCheck } from "react-icons/fa";
 
+import { MyContext } from "../ContextApi/MyContext";
 import ProgressBar from "../components/ProgressBar";
 import MyButton from "../components/MyButton";
 import Page1 from "../components/Page1";
 import Page2 from "../components/Page2";
 import Page3 from "../components/Page3";
 import Page4 from "../components/Page4";
-import { MyContext } from "../ContextApi/MyContext";
 
 function Home() {
   const { screen, setScreen, Headings, handleScreen } = useContext(MyContext);
-  // console.log(Headings, "--------->><><>><><");
-
   return (
     <div className="mainContainer">
       <div
@@ -30,13 +27,11 @@ function Home() {
         <img src={require("../assets/images/headerImg.png")} />
       </div>
       <ProgressBar />
-
       {screen == 3 && (
         <div className="checkIcon">
           <FaCheck size={20} />
         </div>
       )}
-
       <Header
         title={Headings[screen].heading}
         subTitle={Headings[screen].SubHeading}

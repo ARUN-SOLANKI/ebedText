@@ -1,10 +1,7 @@
-import React, { useContext } from "react";
-import Header from "../components/Header";
+import React from "react";
 import TextInput from "../components/TextInput";
 import "../styles/TextInputStyles.css";
 import "../styles/HomeStyles.css";
-import MyButton from "../components/MyButton";
-import ProgressBar from "../components/ProgressBar";
 
 function Page1() {
   return (
