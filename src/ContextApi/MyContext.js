@@ -3,7 +3,7 @@ export const MyContext = createContext();
 
 function MyContextApp({ children }) {
   const [screen, setScreen] = useState(0);
-
+  const [allActiveScreens, setAllActiveScreen] = useState([]);
   const Headings = [
     {
       heading: "Welcome! First Thing First...",
@@ -33,7 +33,8 @@ function MyContextApp({ children }) {
 
   const handleScreen = () => {
     if (screen <= 2) {
-      setScreen(screen + 1);
+      setScreen((screen) => screen + 1);
+      setAllActiveScreen((prev) => [...prev, screen + 1]);
     }
   };
 
@@ -44,6 +45,7 @@ function MyContextApp({ children }) {
         setScreen: setScreen,
         Headings: Headings,
         handleScreen: handleScreen,
+        allActiveScreens: allActiveScreens,
       }}
     >
       {children}
