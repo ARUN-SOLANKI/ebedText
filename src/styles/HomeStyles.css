@@ -1,0 +1,102 @@
+* {
+  font-size: 10px;
+}
+
+.mainContainer {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 10rem;
+}
+.FormContainer {
+  margin-top: 2rem;
+}
+
+.HeaderContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.HeaderTitle {
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  line-height: 1px;
+}
+
+.HeaderSubTitle {
+  font-size: 1.5rem;
+  line-height: 2px;
+}
+
+.MyButton {
+  width: 100%;
+  height: 4rem;
+  font-size: 1.5rem;
+  background-color: #664de5;
+  border: 1px solid #664de5;
+  border-radius: 5px;
+  margin-top: 2rem;
+  color: #fff;
+}
+
+.ProgressContainer {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 0px 1.5rem; */
+  border: 1px solid #ccc;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 100%;
+}
+.emptyBar1 {
+  width: 5%;
+  background-color: #664de5;
+  height: 2px;
+  align-self: center;
+}
+.emptyBar2 {
+  width: 5%;
+  background-color: #ccc;
+  height: 2px;
+  align-self: center;
+}
+
+.activescreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 0px 1.5rem; */
+  background-color: #664de5;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 100%;
+  color: #fff;
+}
+
+.checkIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #664de5;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 2.5rem;
+  color: #fff;
+  margin: auto;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+}
+
+.screenContainer {
+  margin: auto;
+  max-width: 40rem;
+}
