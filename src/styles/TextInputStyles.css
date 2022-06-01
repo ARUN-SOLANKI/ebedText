@@ -6,12 +6,14 @@
 .inputlabel {
   font-size: 1.2rem;
   margin: 0.5rem 0rem;
+  font-family: "Inter", sans-serif;
 }
 .inputField {
   border: 1px solid #ccc;
   height: 30px;
   padding: 0.1px 1rem;
   border-radius: 0.5rem;
+  font-family: "Inter", sans-serif;
 }
 
 .subInputContainer {
@@ -29,6 +31,7 @@
   padding: 0.1px 1rem;
   border-right: 1px solid#ccc;
   background-color: #efefef;
+  font-family: "Inter", sans-serif;
 }
 .input2 {
   border: none;
@@ -36,6 +39,7 @@
   padding: 0.1px 1rem;
   border-radius: 0.5rem;
   width: 70%;
+  font-family: "Inter", sans-serif;
 }
 
 .inputlabel2 {

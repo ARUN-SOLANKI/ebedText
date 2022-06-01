@@ -21,11 +21,13 @@
   font-size: 2.2rem;
   letter-spacing: 1px;
   line-height: 1px;
+  font-family: "Inter", sans-serif;
 }
 
 .HeaderSubTitle {
   font-size: 1.5rem;
   line-height: 2px;
+  font-family: "Inter", sans-serif;
 }
 
 .MyButton {
@@ -37,6 +39,7 @@
   border-radius: 5px;
   margin-top: 2rem;
   color: #fff;
+  font-family: "Inter", sans-serif;
 }
 
 .ProgressContainer {
@@ -56,6 +59,7 @@
   height: 3rem;
   width: 3rem;
   border-radius: 100%;
+  font-family: "Inter", sans-serif;
 }
 .emptyBar1 {
   width: 5%;
@@ -80,6 +84,7 @@
   width: 3rem;
   border-radius: 100%;
   color: #fff;
+  font-family: "Inter", sans-serif;
 }
 
 .checkIcon {
