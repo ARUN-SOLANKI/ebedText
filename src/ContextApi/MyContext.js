@@ -1,4 +1,8 @@
 import React, { createContext, useState } from "react";
+import Page1 from "../components/Page1";
+import Page2 from "../components/Page2";
+import Page3 from "../components/Page3";
+import Page4 from "../components/Page4";
 export const MyContext = createContext();
 
 function MyContextApp({ children }) {
@@ -38,6 +42,19 @@ function MyContextApp({ children }) {
     }
   };
 
+  const pages = () => {
+    switch (screen) {
+      case 1:
+        return <Page2 />;
+      case 2:
+        return <Page3 />;
+      case 3:
+        return <Page4 />;
+      default:
+        return <Page1 />;
+    }
+  };
+
   return (
     <MyContext.Provider
       value={{
@@ -46,6 +63,7 @@ function MyContextApp({ children }) {
         Headings: Headings,
         handleScreen: handleScreen,
         allActiveScreens: allActiveScreens,
+        pages: pages,
       }}
     >
       {children}

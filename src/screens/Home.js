@@ -8,13 +8,10 @@ import { FaCheck } from "react-icons/fa";
 import { MyContext } from "../ContextApi/MyContext";
 import ProgressBar from "../components/ProgressBar";
 import MyButton from "../components/MyButton";
-import Page1 from "../components/Page1";
-import Page2 from "../components/Page2";
-import Page3 from "../components/Page3";
-import Page4 from "../components/Page4";
 
 function Home() {
-  const { screen, setScreen, Headings, handleScreen } = useContext(MyContext);
+  const { screen, Headings, handleScreen, pages } = useContext(MyContext);
+
   return (
     <div className="mainContainer">
       <div
@@ -37,10 +34,7 @@ function Home() {
         subTitle={Headings[screen].SubHeading}
       />
       <div className="screenContainer">
-        {screen == 0 && <Page1 />}
-        {screen == 1 && <Page2 />}
-        {screen == 2 && <Page3 />}
-        {screen == 3 && <Page4 />}
+        {pages()}
         <MyButton
           title={Headings[screen].buttonTitle}
           handleScreen={handleScreen}
